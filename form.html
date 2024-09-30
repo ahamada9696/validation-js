@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>create account</title>
+    <link rel="logo" href="images/">
+
+    <!--start font awesome ver6 (icons) add ///////////////////////// -->
+    <link rel="stylesheet" href="css/all.min.css">
+    <!--end font awesome (icons) add ///////////////////////// -->
+
+    <!-- start google fonts////////////////////////////////////// -->
+    <!-- end google fonts////////////////////////////////////// -->
+    
+
+    <!-- start bootstrap online and offline v4.6////////////////////////////// -->
+     <!-- online  -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <!-- offline -->
+     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- end bootstrap ////////////////////////////// -->
+
+    <!-- start mdbootstrp ////////////////////////////// -->
+     <!-- offline  -->
+    <link rel="stylesheet" href="css/mdb.min.css">
+    <!-- online  -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/7.3.2/mdb.min.css" rel="stylesheet"/>
+    <!-- end mdbootstrp////////////////////////////// -->
+
+    <!-- start animate css  offline and online///////////// -->
+    <link rel="stylesheet" href="css/animate.min.css"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <!-- end animate css //////////////////////////////// -->
+
+    <!-- start animate WOWjs ////////////////////////////////// -->
+     <link rel="stylesheet" href="css/WOW.css">
+    <!-- end animate WOWjs ////////////////////////////////// -->
+
+     <!-- start style sheet main ///////////////////////// -->
+     <link rel="stylesheet" href="css/style.css">
+     <!--end style sheet main ///////////////////////// -->
+</head>
+<body>
+   
+
+
+    <!-- //CART list without bootstrap //////////////////////////////////////////////////////////////////////////////// -->
+
+  <!-- <ul class="list">
+    <li price="200">product1</li>
+    <li price="400">product2</li>
+    <li price="500">product3</li>
+  </ul>
+
+   <div id="content">
+
+   </div>
+   <button style="display: none;" id="btn1">show price</button> -->
+
+   <!-- //CART list withOUT bootstrap ///////////////////////////////////////////////////////////////////////////////// -->
+
+
+
+
+   <!-- //CART list with bootstrap ///////////////////////////////////////////////////////////////////////////////// -->
+
+<!-- <div class="container mt-5">
+    <div class="row">
+        <div class="col-md-4 border-top p-2 prods">
+                <img src="images/creativity.jpg" class="img-fluid" alt="">
+                <h4 class="text-center m-2">product1</h4>
+                <h6 class="text-center">200$</h6>
+                <button class="btn btn-success d-block m-auto" price="200">Add to cart</button>
+        </div>
+        <div class="col-md-4 border-bottom p-2 prods" >
+                <img src="images/Flat-White-Coffee--008.jpg" class="img-fluid" alt="">
+                <h4 class="text-center m-2">product1</h4>
+                <h6 class="text-center">400$</h6>
+                <button class="btn btn-success d-block m-auto" price="400">Add to cart</button>
+        </div>
+        <div class="col-md-4 border-top p-2  prods">
+                <img src="images/sydney-cafe-culture.jpg" class="img-fluid" alt="">
+                <h4 class="text-center m-2">product1</h4>
+                <h6 class="text-center">800$</h6>
+                <button class="btn btn-success d-block m-auto" price="800">Add to cart</button>
+        </div>
+       
+    </div>
+</div>
+
+
+<div id="content" ></div>
+
+<button id="btn1" style="display: none;">show price</button> -->
+
+   <!-- //  CART list with bootstrap ///////////////////////////////////////////////////////////////////////////////// -->
+
+
+
+
+
+<!-- javascript ******************************************************* -->
+
+
+ <!-- increment / decrement ------ -->
+
+
+
+ <!-- <div class="container mt-5 p-5">
+  <div class="row ">
+    <div class="col-md-8 ">
+      <h3 id="demo" class="">0</h3>
+      <button onclick="dataIncrement()" class="btn btn-success">increment</button>
+      <button onclick="dataDecrement()" class="btn btn-warning">decrement</button>
+    </div>
+  </div>
+ </div> -->
+ 
+ <!-- increment / decrement ------ -->
+
+
+ <!-- // currency converter -------------------- -->
+ 
+ <!-- <div class="container mt-5">
+  <div class="row">
+    <div class="col-md-8 m-auto ">
+      <h2 class="text-center">Convert To Egyptain Pound</h2>
+      <form action="about.html" class="" onsubmit="return dataChange()">
+        <input type="text" id="myInput" class="form-control w-100">
+        <input type="submit" class="btn btn-success w-100 my-2" value="Convert" >
+        <br>
+      </form>
+      <h3 id="result" class="text-center "></h3>
+    </div>
+  </div>
+ </div> -->
+ 
+ <!-- // currency converter -------------------- -->
+
+
+ <!-- form validation --------------------------- -->
+ 
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-md-5">
+            <img src="img/56f58c5bbae6320e1aa5d36445fd722b.jpg " class="img-fluid" alt="">
+        </div>
+
+
+        <div class="col-md-7 d-flex flex-column justify-content-center">
+            <h2>create account</h2>
+            <h6 class="text-muted">go ahead and sign up,let everyone know how awesome you are</h6>
+           <h5 id="result"></h5>
+            <form action="register.html" onsubmit="return validate()">
+                <input type="text" name="name" id="name" placeholder="your name" class=" my-4 form-control py-4">
+                <input type="email" name="mail" id="mail" class="form-control p-3 my-4 py-4" placeholder="your email">
+                <input type="password" name="pass" id="pass" class="form-control p-3 my-4 py-4" placeholder="your password">
+                <input type="password" name="confirm" id="confirm" class="form-control py-4 my-4" placeholder="confirm password">
+                <input type="submit" name="submit" id="submit" class=" btn btn-block btn-success  my-4 py-3" value="create account">
+            </form>
+        </div>
+    </div>
+</div>
+
+ <!-- form validation --------------------------- -->
+
+
+<!-- javascript ******************************************************* -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- start font awesome ver6 add ************************* -->
+     <script src="js/all.min.js"></script>
+    <!--end font awesome add ************************* -->
+
+    <!-- start WOWjs *********************************** -->
+    <script src="js/wow.min.js"></script>
+              <script>
+              new WOW().init();
+              </script>
+    <!-- end WOWjs *********************************** -->
+
+
+    <!-- start bootstrap v4.6******************************* -->
+              <!-- online  -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>  
+              <!-- offline  -->
+     <script src="js/jquery.slim.min.js"></script>
+     <script src="js/popper.min.js"></script>
+     <script src="js/bootstrap.min.js"></script>          
+    <!-- end bootstrap ******************************* -->
+
+
+    <!-- start MDBOOTSTRAP ///////////////////////////// -->
+     <!-- offline  -->
+     <script src="js/mdb.umd.min.js"></script>
+     <!-- online  -->
+     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/7.3.2/mdb.umd.min.js"></script>  
+    <!-- end MDBOOTSTRAP ///////////////////////////// -->
+
+     <!--start main javascript ************************** -->
+      <script src="js/main.js"></script>
+     <!-- end main javascript ************************** -->
+
+</body>
+</html>
